@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Dream Salon Parrucchieri",
+    "image": "https://www.dreamsaloncarpi.it/img/salon_hero.png",
+    "@id": "https://www.dreamsaloncarpi.it",
+    "url": "https://www.dreamsaloncarpi.it/salone.html",
+    "telephone": "+390596440544",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Cuneo 5",
+      "addressLocality": "Carpi",
+      "postalCode": "41012",
+      "addressCountry": "IT"
+    },
+    "priceRange": "$$"
+  }
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Salone e la Gallery | Dream Salon Parrucchieri Carpi</title>
+  <meta name="description"
+    content="Scopri il salone Dream Salon a Carpi e conosci Cristina e il suo team. Guarda i nostri lavori nella gallery fotografica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Immagine ingrandita">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Chiudi">✕</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-wrap" id="logo">
+        <span class="logo-name">Dream Salon</span>
+        <span class="logo-sub">Parrucchieri · Carpi</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="servizi.html" class="nav-link">Servizi &amp; Prezzi</a>
+        <a href="salone.html" class="nav-link active">Salone &amp; Gallery</a>
+        <a href="contatti.html" class="nav-link">Contatti</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+390596440544" class="icon-btn" title="Chiama il salone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://wa.me/390596440544?text=Ciao!%20Vorrei%20prenotare%20da%20Dream%20Salon." class="icon-btn"
+          title="WhatsApp" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.treatwell.it/salone/dream-salon-carpi/" class="btn btn-primary header-book-btn"
+          target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg> Prenota su Treatwell
+        </a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambia tema">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon"
+          style="margin-right:6px;">
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg> Home
+      </a>
+      <a href="servizi.html" class="mobile-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon"
+          style="margin-right:6px;">
+          <circle cx="6" cy="6" r="3"></circle>
+          <circle cx="6" cy="18" r="3"></circle>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+          <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+          <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+        </svg> Servizi & Prezzi
+      </a>
+      <a href="salone.html" class="mobile-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon"
+          style="margin-right:6px;">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+          </polygon>
+        </svg> Salone & Gallery
+      </a>
+      <a href="contatti.html" class="mobile-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon"
+          style="margin-right:6px;">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg> Contatti
+      </a>
+      <a href="https://www.treatwell.it/salone/dream-salon-carpi/" class="btn btn-primary" target="_blank"
+        rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg> Prenota su Treatwell
+      </a>
+    </div>
+  </header>
+  <main>
+    <!-- PAGE HEADER -->
+    <section style="background:var(--midnight); padding: 80px 0 60px; color:var(--white); text-align:center;">
+      <div class="container">
+        <h1 style="font-size:clamp(32px, 4vw, 48px); margin-bottom:16px;">Il nostro Salone</h1>
+        <p style="color:rgba(255,255,255,0.7); max-width:600px; margin:0 auto; font-size:17px;">
+          Uno spazio di relax e cura personale. Conosci il team e guarda i nostri risultati migliori.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEAM & SALON -->
+    <section class="team-section" id="salone">
+      <div class="container">
+        <div class="team-layout">
+          <div class="team-photo-wrap" data-aos>
+            <div class="team-photo">
+              <picture>
+                <source srcset="img/salon_team.webp" type="image/webp">
+                <img src="img/salon_team.png" alt="Cristina e il team di Dream Salon Parrucchieri Carpi" loading="lazy">
+              </picture>
+            </div>
+            <div class="team-accent">
+              <strong>+10</strong>
+              <span>anni a Carpi</span>
+            </div>
+          </div>
+
+          <div class="team-content" data-aos data-delay="200">
+            <span class="eyebrow">Il Salone &amp; le persone</span>
+            <h2>Cristina e il suo team</h2>
+            <p>Dream Salon nasce a Carpi con un'idea semplice: prendersi cura delle persone, non solo dei capelli.
+              Cristina guida un team di professioniste che ogni giorno mettono ascolto, esperienza e passione in ogni
+              appuntamento.</p>
+            <p>Che tu voglia un piccolo cambiamento o una trasformazione più importante, qui trovi persone pronte a
+              consigliarti con onestà e senza spingerti verso soluzioni che non fanno per te.</p>
+            <div class="team-members">
+              <div class="team-member">
+                <div class="team-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg></div>
+                <span class="team-member-name">Cristina</span>
+                <span class="team-member-role">Titolare &amp; Stylist</span>
+              </div>
+              <div class="team-member">
+                <div class="team-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg></div>
+                <span class="team-member-name">Team</span>
+                <span class="team-member-role">Dream Salon</span>
+              </div>
+              <div class="team-member">
+                <div class="team-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg></div>
+                <span class="team-member-name">Team</span>
+                <span class="team-member-role">Dream Salon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header" data-aos>
+          <span class="eyebrow">I nostri lavori</span>
+          <h2>Gallery</h2>
+          <p>Un assaggio di tagli, colorazioni e styling realizzati nel salone. Ogni lavoro racchiude una storia e un
+            sorriso.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-aos data-delay="100" data-img="img/gallery_color.webp" tabindex="0"
+            role="button" aria-label="Colore e balayage">
+            <picture>
+              <source srcset="img/gallery_color.webp" type="image/webp">
+              <img src="img/gallery_color.png" alt="Balayage e colorazione su misura, Dream Salon Carpi" loading="lazy">
+            </picture>
+          </div>
+          <div class="gallery-item" data-aos data-delay="150" data-img="img/gallery_cut.webp" tabindex="0" role="button"
+            aria-label="Taglio elegante">
+            <picture>
+              <source srcset="img/gallery_cut.webp" type="image/webp">
+              <img src="img/gallery_cut.png" alt="Taglio donna elegante, Dream Salon Carpi" loading="lazy">
+            </picture>
+          </div>
+          <div class="gallery-item" data-aos data-delay="200" data-img="img/gallery_styling.webp" tabindex="0"
+            role="button" aria-label="Acconciatura evento">
+            <picture>
+              <source srcset="img/gallery_styling.webp" type="image/webp">
+              <img src="img/gallery_styling.png" alt="Acconciatura per evento speciale, Dream Salon Carpi"
+                loading="lazy">
+            </picture>
+          </div>
+          <div class="gallery-item" data-aos data-delay="250" data-img="img/gallery_treatment.webp" tabindex="0"
+            role="button" aria-label="Trattamento capelli">
+            <picture>
+              <source srcset="img/gallery_treatment.webp" type="image/webp">
+              <img src="img/gallery_treatment.png" alt="Trattamento ristrutturante capelli, Dream Salon Carpi"
+                loading="lazy">
+            </picture>
+          </div>
+          <div class="gallery-item" data-aos data-delay="300">
+            <div class="gallery-placeholder"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="ui-icon" style="margin-right:8px;">
+                <circle cx="13.5" cy="5.5" r=".5"></circle>
+                <circle cx="17.5" cy="10.5" r=".5"></circle>
+                <circle cx="8.5" cy="7.5" r=".5"></circle>
+                <circle cx="6.5" cy="12.5" r=".5"></circle>
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                </path>
+              </svg><span>Colore</span></div>
+          </div>
+          <div class="gallery-item" data-aos data-delay="350">
+            <div class="gallery-placeholder"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="ui-icon" style="margin-right:8px;">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg><span>Taglio</span></div>
+          </div>
+          <div class="gallery-item" data-aos data-delay="400">
+            <div class="gallery-placeholder"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="ui-icon" style="margin-right:8px;">
+                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                <path d="M11 3 8 9l4 13 4-13-3-6"></path>
+                <path d="M2 9h20"></path>
+              </svg><span>Evento</span></div>
+          </div>
+          <div class="gallery-item" data-aos data-delay="450">
+            <div class="gallery-placeholder"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="ui-icon" style="margin-right:8px;">
+                <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path><path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path><path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+              </svg><span>Piega</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+  </main>
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">Dream Salon</div>
+          <p class="footer-tagline">Il parrucchiere di fiducia a Carpi.<br>Taglio, colore e cura su misura da oltre 10
+            anni.</p>
+          <div class="footer-contact">
+            <a href="tel:+390596440544" id="footer-call-btn">
+              <span class="fc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="ui-icon icon-sm">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg></span>
+              059 640544
+            </a>
+            <a href="https://wa.me/390596440544" id="footer-wa-btn" target="_blank" rel="noopener">
+              <span class="fc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="ui-icon icon-sm">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                  </path>
+                </svg></span>
+              WhatsApp
+            </a>
+            <a href="https://www.google.com/maps?q=Via+Cuneo+5+Carpi+MO" target="_blank" rel="noopener"
+              id="footer-map-btn">
+              <span class="fc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="ui-icon icon-sm">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg></span>
+              Via Cuneo 5, 41012 Carpi (MO)
+            </a>
+          </div>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/" class="footer-social-btn" target="_blank" rel="noopener"
+              aria-label="Instagram" id="footer-ig-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon icon-md">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/" class="footer-social-btn" target="_blank" rel="noopener"
+              aria-label="Facebook" id="footer-fb-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon icon-md">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.treatwell.it/salone/dream-salon-carpi/" class="footer-social-btn" target="_blank"
+              rel="noopener" aria-label="Treatwell" id="footer-tw-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon icon-md">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servizi.html">Servizi & Prezzi</a></li>
+            <li><a href="salone.html">Salone & Team</a></li>
+            <li><a href="salone.html#gallery">Gallery</a></li>
+            <li><a href="contatti.html">Contatti & FAQ</a></li>
+            <li><a href="https://www.treatwell.it/salone/dream-salon-carpi/" target="_blank" rel="noopener">Prenota su
+                Treatwell</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Orari</h4>
+          <ul class="footer-hours">
+            <li><span>Lun – Ven</span><span>09:00–19:00</span></li>
+            <li><span>Sabato</span><span>09:00–17:00</span></li>
+            <li><span>Domenica</span><span>Chiuso</span></li>
+          </ul>
+          <p style="margin-top:14px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              class="ui-icon icon-sm" style="margin-right:8px;">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+              </path>
+            </svg><a href="https://www.treatwell.it/salone/dream-salon-carpi/" target="_blank" rel="noopener">Prenota su
+              Treatwell</a></p>
+        </div>
+
+        <div>
+          <h4>Contatti</h4>
+          <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ui-icon icon-sm"
+              style="margin-right:8px;">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg><a href="tel:+390596440544">059 640544</a></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ui-icon icon-sm"
+              style="margin-right:8px;">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+              </path>
+            </svg><a href="https://wa.me/390596440544">WhatsApp</a></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ui-icon icon-sm"
+              style="margin-right:8px;">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>Via Cuneo, 5<br>41012 Carpi (MO)</p>
+          <p style="margin-top:12px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="ui-icon icon-sm"
+              style="color:var(--gold-bright);">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>4,7/5 su <a href="https://g.page/r/dreamsaloncarpi" target="_blank" rel="noopener">Google</a></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="ui-icon icon-sm"
+              style="color:var(--gold-bright);">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>4,9/5 su <a href="https://www.treatwell.it/salone/dream-salon-carpi/" target="_blank"
+              rel="noopener">Treatwell</a></p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 Dream Salon Parrucchieri – Carpi (MO) – P.IVA (da inserire)</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html" id="footer-privacy-link">Privacy Policy</a>
+        <a href="privacy.html" id="footer-cookie-link">Cookie Policy</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-mobile" aria-hidden="true">
+    <a href="tel:+390596440544" class="sm-call">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon"
+        style="margin-right:4px;">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+        </path>
+      </svg> Chiama
+    </a>
+    <a href="https://www.treatwell.it/salone/dream-salon-carpi/" class="sm-book" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ui-icon"
+        style="margin-right:4px;">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg> Prenota
+    </a>
+  </div>
+
+</body>
+
+</html>
